@@ -9,8 +9,7 @@ end
 def summon_captain_planet (planeteer_calls)
   # Your code here
   planeteer_calls.collect do |x|
-    captialletter = ((x.shift).upcase)
-    x.unshift(captialletter)
+    x[0].replace x[0].upcase
     x << "!"
   end 
 end
